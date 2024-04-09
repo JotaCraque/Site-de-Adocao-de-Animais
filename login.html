@@ -9,21 +9,23 @@
 </head>
 <body>
     <a href="login.html"><img id="logo" src="Images/adopt.png" alt="Logo da Empresa"></a>
-    <form action="php/login.php" method="post">
-    <div class="container">
-        <div class="login">
-            <h1>Login</h1>
-            <p>Estamos felizes em te ver novamente.</p>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Senha" required>
-        </div>
-        <div class="salvarsenha">
-            <label><input type="checkbox">Lembre-me</label>
-        </div>        
+    <form action="php/testlogin.php" method="post">
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <p>Estamos felizes em te ver novamente.</p>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
+            <div class="salvarsenha">
+                <label><input type="checkbox">Lembre-me</label>
+            </div>        
             <input class="inputSubmit" type="submit" name="submit" value="Entrar">
             <br>
-            <a href="cadastro.html">Crie sua conta</a>
-    </div>       
+            <div class="login">
+                <a href="cadastro.html">Crie sua conta</a>
+            </div>
+        </div>       
     </form>
 </body>
 </html>

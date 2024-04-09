@@ -43,7 +43,6 @@ body, html {
     text-align: center;
 }
 
-
 .login input {
     background-color: #f0f0f0;
     width: 100%;
@@ -91,8 +90,7 @@ body, html {
 
 .login button:hover {
     color: #2e42fa96;
-    background-color: #ffffff
-    
+    background-color: #ffffff;
 }
 
 .login a {
@@ -122,6 +120,7 @@ body, html {
     border-radius: 10px;
     color: white;
 }
+
 .inputSubmit:hover {
     background-color: #0617b396;
     cursor: pointer;
