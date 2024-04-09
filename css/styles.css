@@ -1,0 +1,150 @@
+/* Reset de margens e preenchimentos */
+body, ul {
+  margin: 0px; 
+  padding: 0px; 
+}
+
+/* Estilos padrão para links */
+a {
+  position: relative; 
+  text-decoration: none; 
+  color: rgba(255, 255, 255, 0.774); /* Cor do texto */
+  letter-spacing: 0.5px; 
+  padding: 0 2px; 
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+a:after {
+  content: ""; 
+  position: absolute; 
+  background-color: rgb(255, 255, 255); /* Cor do sublinhado */
+  height: 3px; 
+  width: 0;
+  left: 0; 
+  bottom: -2px; 
+  transition: 0.3s; 
+}
+
+/* Estilos ao passar o mouse */
+a:hover {
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Efeito de sublinhado completo ao passar o mouse */
+a:hover:after {
+  width: 100%; 
+}
+
+/* Estilos para o logo */
+#logo {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+}
+
+/* Estilos para links destacados ao passar o mouse */
+.highlighted:hover {
+  color: #fffb00; /* Cor do texto destacado ao passar o mouse */
+}
+
+/* Efeito de sublinhado para links destacados */
+.highlighted:hover:after {
+  background-color: #ffffff; /* Cor do sublinhado para links destacados */
+}
+
+/* Estilos para o cabeçalho */
+#header {
+  position: relative; 
+  box-sizing: border-box; 
+  box-shadow: 0px 3px 12px #464646; /* Sombra */
+  height: 70px; 
+  padding: 1rem; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background: #4a5cff; /* Cor de fundo */
+}
+
+/* Estilos para o menu */
+#menu {
+  display: flex; 
+  list-style: none;
+  gap: 0.5rem; 
+}
+
+/* Estilos para os itens do menu */
+#menu a {
+  display: block; 
+  padding: 0.5rem; 
+}
+
+/* Botão de menu mobile */
+#btn-mobile {
+  display: none; 
+}
+
+/* Estilos para tamanhos de tela menores */
+@media (max-width: 600px) {
+  #menu {
+    display: block; 
+    position: absolute; 
+    width: 100%; 
+    top: 70px; 
+    right: 0px; 
+    background: #4a5cff; 
+    transition: 0.6s; 
+    z-index: 1000; 
+    height: 0px; 
+    visibility: hidden;
+    overflow-y: hidden; 
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible; 
+    overflow-y: auto; 
+  }
+  #menu a {
+    padding: 1rem 0; 
+    margin: 0 1rem; 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    align-items: center;
+    display: flex; 
+    padding: 0.5rem 1rem;
+    font-size: 1rem; 
+    border: none;
+    background: none;
+    cursor: pointer; 
+    gap: 0.5rem; 
+    color: white; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 1rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: ''; 
+    display: block; 
+    width: 20px;
+    height: 2px; 
+    background: currentColor;
+    margin-top: 5px; 
+    transition: 0.3s; 
+    position: relative; 
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg); 
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg); 
+    top: -7px; 
+  }
+}
