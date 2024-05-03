@@ -78,19 +78,19 @@ body, html {
     color: #ffffff;
     width: 100%;
     height: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
     display: block;
-    margin-bottom: 10px; 
-    border: 1px solid #ffffff;
+    margin-bottom: 5px; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     border-radius: 5px;
     padding-left: 10px;
-    background-color: #4a5cff;
+    background-color: #2e42fa96;
 }
 
 .login button:hover {
-    color: #2e42fa96;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #0617b396;
 }
 
 .login a {

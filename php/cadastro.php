@@ -4,13 +4,17 @@ if(isset($_POST['submit'])) {
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
+    $cpf = $_POST['cpf'];
+    $cep = $_POST['cep'];
     $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
     $datanasc = $_POST['datanasc'];
     $estado = $_POST['estado'];
-
-    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, telefone, senha, datanasc, estado) VALUES ('$nome', '$email', '$telefone', '$senha', '$datanasc', '$estado')");
+    $genero = $_POST['genero'];
     
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, cpf, cep, telefone, senha, datanasc, estado, genero) VALUES ('$nome', '$email', '$cpf', '$cep', '$telefone', '$senha', '$datanasc', '$estado', '$genero')");
+
     if ($result) {
         echo "Registro inserido com sucesso!";
     } else {
