@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
     $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, cpf, cep, telefone, senha, datanasc, estado, genero) VALUES ('$nome', '$email', '$cpf', '$cep', '$telefone', '$senha', '$datanasc', '$estado', '$genero')");
 
     if ($result) {
-        echo "Registro inserido com sucesso!";
+        header('Location: ../login.html');
     } else {
         echo "Erro ao inserir registro: " . mysqli_error($conexao);
     }

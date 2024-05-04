@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro.css"> <!-- Importa o arquivo CSS para estilização -->
     <title>Cadastro</title>
-    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> <!-- Ícone da aba do navegador -->
 </head>
 <body>
-    <a href="login.html"><img id="logo" src="Images/adopt.png" alt="Logo da Empresa"></a>
-    <form action="php/cadastro.php" method="post">
-        <div class="container">
-            <div class="login">
-                <h1>Cadastro</h1>
-                <p>Insira suas informações pessoais</p>
+    <a href="login.html">
+        <img id="logo" src="Images/adopt.png" alt="Logo da Empresa"> <!-- Logotipo com link para a página de login -->
+    </a>
+    <form action="php/cadastro.php" method="post"> <!-- Formulário de cadastro -->
+        <div class="container"> <!-- Container principal -->
+            <div class="login"> <!-- Div para o formulário de cadastro -->
+                <h1>Cadastro</h1> <!-- Título do formulário -->
+                <p>Insira suas informações pessoais</p> <!-- Mensagem de instrução -->
+                <!-- Campos de entrada -->
                 <input type="text" placeholder="Nome" id="nome" name="nome" required>
                 <input type="email" placeholder="E-mail" id="email" name="email" required>
                 <input type="cpf" placeholder="CPF" id="cpf" name="cpf" required>
@@ -21,49 +24,52 @@
                 <input type="tel" placeholder="Ex: (21) 12345-6789" id="telefone" name="telefone" required>
                 <input type="password" placeholder="Senha" id="senha" name="senha" required>
                 <input type="date" id="datanasc" name="datanasc" required>
-                    <div class="labels-container">
-                        <label for="estado">Estado:</label>
-                        <label for="genero">Gênero:</label>
-                    </div>
-                    <div class="selects-container">
-                        <select id="estado" name="estado" required>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                        <select name="genero" id="genero" required>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Prefiro não dizer">Prefiro não dizer</option>
-                        </select>
-                    </div>
-                <button type="submit" class="btn" name="submit">Cadastre-se</button>
+                <!-- Labels e selects para Estado e Gênero -->
+                <div class="labels-container">
+                    <label for="estado">Estado:</label>
+                    <label for="genero">Gênero:</label>
+                </div>
+                <div class="selects-container">
+                    <select id="estado" name="estado" required>
+                        <!-- Opções para Estado -->
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <select name="genero" id="genero" required>
+                        <!-- Opções para Gênero -->
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Prefiro não dizer">Prefiro não dizer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" name="submit">Cadastre-se</button> <!-- Botão de cadastro -->
                 <br>
-                <a href="login.html">Acesse sua conta</a>
+                <a href="login.html">Acesse sua conta</a> <!-- Link para a página de login -->
             </div>
         </div>
     </form>      

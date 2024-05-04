@@ -10,7 +10,7 @@
 }
 
 body, html {
-    background-color: #a9bfff;
+    background-color: #18259c;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,39 +21,41 @@ body, html {
 
 #logo {
     position: absolute;
-    top: 50px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    width: 230px;
+    width: 100px;
     height: auto;
 }
 
 .container {
     position: fixed;
-    top: 300px;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #4a5cff;
-    width: 300px; 
+    background-color: #ffffff;
+    width: 400px; 
     padding: 20px;
-    border: 1px solid #4a5cff;
     border-radius: 5px;
     text-align: center;
 }
 
 .login input {
-    background-color: #f0f0f0;
-    width: 100%;
+    background-color: #ffffff;
+    width: calc(100% - 50px);
     height: 40px;
-    margin-top: 20px;
-    display: block;
-    margin-bottom: 30px; 
-    border: 1px solid #2e43fa;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 6px;
+    border: none;
+    border-color: #424242;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
     padding-left: 10px;
+    transition: 0.15s linear;
 }
 
 .login input::placeholder {
@@ -68,62 +70,66 @@ body, html {
 .login p {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #2e43fa; /* Mantém a cor original */
+}
+
+.login h1 {
+    color: #2e43fa; /* Mantém a cor original */
 }
 
 .login label {
-    color: #ffffff;
-}
-
-.login button {
-    color: #ffffff;
-    width: 100%;
-    height: 40px;
-    margin-top: 30px;
-    display: block;
-    margin-bottom: 5px; 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding-left: 10px;
-    background-color: #2e42fa96;
-}
-
-.login button:hover {
-    color: #ffffff;
-    background-color: #0617b396;
+    color: #2e43fa;
 }
 
 .login a {
-    color: white;
+    color: #2e43fa;
     display: inline-block;
-    margin-top: 10px;
+    text-decoration: none;
+    margin-top: 15px;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.login a:hover, a:focus {
+    outline: none;
+    color: #000000;
 }
 
 .salvarsenha {
-    color: white;
-    margin-top: 10px;
+    color: black;
+    margin-top: 15px;
     position: absolute;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 10px;
+    margin-left: 30px;
+    transform: scale(1.25);
+}
+
+.salvarsenha label {
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .inputSubmit {
-    font-size: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    margin-top: 85px;
-    margin-bottom: 15px;
-    background-color: #2034e796;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    border-radius: 10px;
-    color: white;
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 85%;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    color: #2e43fa;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 80px;
+    transition: 0.3s;
 }
 
-.inputSubmit:hover {
-    background-color: #0617b396;
-    cursor: pointer;
+.inputSubmit:hover, .inputSubmit:focus {
+    outline: none;
+    color: #ffffff;
+    background-color: #2e43fa;
 }
 
 .titulo h1 {
@@ -132,11 +138,11 @@ body, html {
 
 .container h1 {
     text-align: center;
-    color: #ffffff;
+    color: #2e43fa;
 }
 
 .container p {
-    color: rgba(255, 255, 255, 0.418);
-    margin-bottom: 5px;
+    color: #2e43fa;;
+    margin-bottom: 35px;
     text-align: center;
 }

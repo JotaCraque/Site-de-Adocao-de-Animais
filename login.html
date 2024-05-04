@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login.css"> <!-- Importa o arquivo CSS para estilização -->
     <title>Login</title>
-    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> <!-- Ícone da aba do navegador -->
 </head>
 <body>
-    <a href="login.html"><img id="logo" src="Images/adopt.png" alt="Logo da Empresa"></a>
-    <form action="php/testlogin.php" method="post">
-        <div class="container">
-            <div class="login">
-                <h1>Login</h1>
-                <p>Estamos felizes em te ver novamente.</p>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="password" name="senha" placeholder="Senha" required>
+    <a href="login.html">
+        <img id="logo" src="Images/adopt.png" alt="Logo da Empresa"> <!-- Logotipo com link para a página de login -->
+    </a>
+    <form action="php/testlogin.php" method="post"> <!-- Formulário de login -->
+        <div class="container"> <!-- Container principal -->
+            <div class="login"> <!-- Div para o formulário de login -->
+                <h1>Login</h1> <!-- Título do formulário -->
+                <p>Estamos felizes em te ver novamente.</p> <!-- Mensagem de boas-vindas -->
+                <input type="email" name="email" placeholder="E-mail" required> <!-- Campo de entrada para o e-mail -->
+                <input type="password" name="senha" placeholder="Senha" required> <!-- Campo de entrada para a senha -->
             </div>
-            <div class="salvarsenha">
-                <label><input type="checkbox">Lembre-me</label>
+            <div class="salvarsenha"> <!-- Div para a opção de lembrar senha -->
+                <label><input type="checkbox">Lembre-me</label> <!-- Checkbox para lembrar a senha -->
             </div>        
-            <input class="inputSubmit" type="submit" name="submit" value="Entrar">
+            <input class="inputSubmit" type="submit" name="submit" value="Entrar"> <!-- Botão de envio do formulário -->
             <br>
-            <div class="login">
-                <a href="cadastro.html">Crie sua conta</a>
+            <div class="login"> <!-- Div para o link de cadastro -->
+                <a href="cadastro.html">Crie sua conta</a> <!-- Link para a página de cadastro -->
             </div>
         </div>       
     </form>

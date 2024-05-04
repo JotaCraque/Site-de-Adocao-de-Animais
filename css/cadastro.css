@@ -10,7 +10,7 @@
 }
 
 body, html {
-    background-color: #a9bfff;
+    background-color: #18259c;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -25,40 +25,44 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
 .container {
     position: fixed;
-    top: 150px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #4a5cff;
+    background-color: #ffffff;
     width: 400px; 
     padding: 20px;
-    border: 1px solid #4a5cff;
     border-radius: 5px;
     text-align: center;
 }
 
 .login input {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     width: calc(100% - 50px);
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #2e43fa;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 6px;
+    border: none;
+    border-color: #424242;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
     padding-left: 10px;
+    transition: 0.15s linear;
 }
 
 .login select {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     width: calc(100% - 60%);
     height: 40px;
+    cursor: pointer;
     border: 1px solid #2e43fa;
     border-radius: 5px;
     justify-content: space-evenly;
@@ -76,41 +80,51 @@ body, html {
 .login p {
     margin-top: 20px;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.418); /* Mantém a cor original */
+    color: #2e43fa; /* Mantém a cor original */
 }
 
 .login h1 {
-    color: #ffffff; /* Mantém a cor original */
+    color: #2e43fa; /* Mantém a cor original */
 }
 
 .login label {
-    color: #ffffff;
+    color: #2e43fa;
 }
 
 .login button {
-    color: #ffffff;
-    width: 100%;
-    height: 40px;
-    margin-top: 30px;
-    display: block;
-    margin-bottom: 5px; 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding-left: 10px;
-    background-color: #2e42fa96;
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 85%;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    color: #2e43fa;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 25px;
+    transition: 0.3s;
 }
 
-.login button:hover {
+.login button:hover, button:focus {
+    outline: none;
     color: #ffffff;
-    background-color: #0617b396;
+    background-color: #2e43fa;
 }
 
 .login a {
-    color: white;
+    color: #2e43fa;
     display: inline-block;
-    margin-top: 10px;
+    text-decoration: none;
+    margin-top: 15px;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.login a:hover, a:focus {
+    outline: none;
+    color: #000000;
 }
 
 .labels-container {
