@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Senha</title>
+    <link rel="stylesheet" href="css/redefinirsenha.css"> <!-- Inclui o arquivo CSS para estilização -->
+</head>
+<body>
+    <a href="login.html">
+        <img id="logo" src="Images/adopt.png" alt="Logo da Empresa"> <!-- Link para a página de login com o logo da empresa -->
+    </a>
+    <div class="container">
+        <div class="login">
+            <h1>Mudar Senha</h1> <!-- Título da página -->
+            <form action="php/redefinirsenha.php" method="post"> <!-- Formulário para mudar a senha -->
+                <input type="email" id="email" name="email" placeholder="Email:" required> <!-- Campo de entrada para o email -->
+                <input type="password" id="nova_senha" name="nova_senha" placeholder="Nova Senha:" required> <!-- Campo de entrada para a nova senha -->
+        </div>
+                <input class="inputSubmit" type="submit" name="submit" value="Mudar Senha"> <!-- Botão para enviar o formulário -->
+            </form>
+        <div class="login">
+            <a href="login.html">Voltar</a> <!-- Link para voltar à página de login -->
+        </div>
+    </div>
+</body>
+</html>
